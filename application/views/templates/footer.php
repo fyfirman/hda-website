@@ -1,5 +1,5 @@
 <!-- Footer -->
-	<footer class="border bg-dark border-bottom-0 border-left-0 border-right-0 pt-3 pb-3 text-white">
+	<footer class="navbar bg-dark text-white fixed-bottom">
 		<div class="container">
 			<!-- <div class="col-md-6"> -->
 				<span>
