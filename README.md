@@ -11,7 +11,6 @@ For maintaining the database
 ### Model 
 - Location
   - `application/models`
-
 - Format file rule
   - `<filename>_model.php` - All lowercase, ex: benda_model.php
 
