@@ -53,7 +53,7 @@
 
 				<!-- Menu BK -->
 				<li class="nav-item">
-					<a class="nav-link" href="#">BK</a>
+					<a class="nav-link" href="<?php echo site_url('/bk'); ?>">BK</a>
 				</li>
 			</ul>
 
@@ -74,3 +74,6 @@
 		</div>
 	</nav>
 	<!-- End of Navbar -->
+
+	<!-- Start of body content -->
+	<div class="container">

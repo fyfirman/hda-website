@@ -1,3 +1,7 @@
+
+	</div>
+	<!-- End of body content -->
+
 <!-- Footer -->
 	<footer class="navbar bg-dark text-white fixed-bottom">
 		<div class="container">

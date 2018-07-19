@@ -32,8 +32,12 @@
                         </label>
                     </div>
 
-                    <!-- Submit buton -->
-                    <button type="login" class="btn btn-primary">Login</button>
+                    <!-- Submit buton 
+                    <button type="login" class="btn btn-primary">Login</button> 
+                    -->
+
+                    <!-- button sementara -->
+                    <a class="btn btn-primary" href="<?php echo site_url('/bk'); ?>">Login</a>
                 </form>
             </div>
 
