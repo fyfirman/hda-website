@@ -17,7 +17,7 @@ For maintaining the database
 - Location
   - `application/models`
 - Format file rule
-  - `<filename>_model.php` - All lowercase, ex: benda_model.php
+  - `<Filename>_model.php` - Capitalized, ex: Benda_model.php
 
 
 ### View
