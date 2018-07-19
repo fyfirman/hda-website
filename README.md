@@ -6,6 +6,11 @@ For maintaining the database
 # Change log
 ### [18 Juli 2018 - 19:38]
 - Adding view homepage
+- Changing the footer into Fixed
+
+### [19 Juli 2018 - 10:04]
+- Login button redirect into BK page (temporary)
+- Adding BK page with 3 sub page (BE, DPA, Mubes)
 
 # Structure
 ### Model 
