@@ -22,7 +22,7 @@ For maintaining the database
 
 ### View
 - Location
-  - `application/views/pages` - For body template
+  - `application/views/-` - For body template
   - `application/views/templates` - For edit global header/footer 
 - Format file rule
   - `<filename>.php` - All lowercase, ex: benda.php
