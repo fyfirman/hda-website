@@ -21,16 +21,16 @@
             switch ($bk){
                 case 'be':
                     $data['title'] = 'Badan Eksekutif';
-                break;
+                    break;
                 case 'dpa':
                     $data['title'] = 'Dewan Perwakilan Anggota';
-                break;
+                    break;
                 case 'mubes':
                     $data['title'] = 'Musyawarah Besar';
-                break;
+                    break;
                 default:
                     $data['title'] = NULL;
-                breakl;
+                    break;
             }
 
             // var 'bk' diisi dengan database sesuai dengan site_url() dari /views/bk/index.php
