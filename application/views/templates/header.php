@@ -11,7 +11,8 @@
     <script src="<?php echo base_url()?>/assets/js/bootstrap.min.js"></script> 
 </head>
 <body>
-    <!-- Start of navbar -->
+	<!-- Start of navbar -->
+<header>
 	<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" >
 		<div class="container">
 			<a class="navbar-brand" href="#">Himatif Database</a>
@@ -61,19 +62,19 @@
 			<ul class="navbar-nav  ml-auto">	
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-						Firmansyah Yanuar
+						Username Here
 					</a>
 					<div class="dropdown-menu dropdown-menu-right">
 						<a class="dropdown-item" href="#">Edit Profile</a>
 						<div class="dropdown-divider"></div> 
-						<a class="dropdown-item" href="#">Logout</a>
+						<a class="dropdown-item" href="<?php echo site_url();?>">Logout</a>
 					</div>
 				</li>
 			</ul>
 			</div>
 		</div>
 	</nav>
+</header>
+	
 	<!-- End of Navbar -->
 
-	<!-- Start of body content -->
-	<div class="container">
