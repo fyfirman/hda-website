@@ -1,6 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+$route['login/ceklogin'] = 'login/ceklogin';
 $route['bk/(:any)'] = 'bk/view/$1';
 $route['bk'] = 'bk/index';
 $route['default_controller'] = 'pages/view';
