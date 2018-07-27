@@ -1,5 +1,10 @@
 <?php
     class Bk extends CI_Controller{
+        //konstraktor load model bk_model
+        public function __construct(){
+            parent::__construct();
+            $this->load->model('bk_model');
+        }
         // fungsi ini untuk handle /hda-website/bk
         public function index(){         
             $data['title'] = 'Badan Kelengkapan Himatif FMIPA Unpad';

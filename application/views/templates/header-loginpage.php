@@ -11,10 +11,12 @@
     <script src="<?php echo base_url()?>/assets/js/bootstrap.min.js"></script> 
 </head>
 <body>
-<!-- Start of navbar -->
+<!-- Start of header -->
+<header>
 	<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" >
 		<div class="container">
 			<a class="navbar-brand" href="#">Himatif Database</a>
 		</div>
 	</nav>
-	<!-- End of Navbar -->
+</header>
+	<!-- End of header -->
