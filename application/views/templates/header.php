@@ -75,6 +75,4 @@
 		</div>
 	</nav>
 </header>
-	
-	<!-- End of Navbar -->
 
