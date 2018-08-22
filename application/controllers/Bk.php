@@ -8,8 +8,7 @@
         // fungsi ini untuk handle /hda-website/bk
         public function index(){         
             $data['title'] = 'Badan Kelengkapan Himatif FMIPA Unpad';
-            $data['be'] = $this->bk_model->get_bk('be');
-
+            
             $this->load->view('templates/header');
             $this->load->view('bk/index', $data);
             $this->load->view('templates/footer');
