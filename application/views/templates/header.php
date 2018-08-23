@@ -13,7 +13,7 @@
 <body>
 	<!-- Start of navbar -->
 <header>
-	<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" >
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" >
 		<div class="container">
 			<a class="navbar-brand" href="#">Himatif Database</a>
 
@@ -37,19 +37,9 @@
 
 				<!-- Menu KKM-->
 				<li class="nav-item dropdown dropdown-hover no-arrow">
-					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+					<a class="nav-link" href="<?php echo site_url('/kkm'); ?>">
 						KKM
 					</a>
-					<div class="dropdown-menu">
-						<div class="dropdown-header">Olahraga</div> 
-						<a class="dropdown-item" href="#">IFC</a>
-						<a class="dropdown-item" href="#">IBC</a>
-						<a class="dropdown-item" href="#">IBT</a>
-						<div class="dropdown-header">TI</div> 
-						<a class="dropdown-item" href="#">DevCom</a>
-						<a class="dropdown-item" href="#">IRC</a>
-						<a class="dropdown-item" href="#">IDeA</a>
-					</div>
 				</li>
 
 				<!-- Menu BK -->
