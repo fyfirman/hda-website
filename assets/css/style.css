@@ -16,12 +16,31 @@
 	padding: 20px, 0;
 }
 
+/*--------------------------------------------------------------------------------                                        
+                            KKM PAGE
+=================================================================================*/
 .kkm-logo{
 	max-height: 48px;
 }
 
 .kkm-chief{
 	max-height: 32px;
+}
+
+.rounded-circle{
+    width: 30px;
+    height: 30px;
+}
+
+.kkm-content{
+    height: 100px;
+    font-size: 12px;
+    text-align: center;
+    display: table;
+}
+.kkm-content-inner{
+  display: table-cell;
+  vertical-align: middle;   
 }
 /*.dropdown-hover > .dropdown-toggle:active {
     Without this, clicking will make it sticky
