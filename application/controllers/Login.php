@@ -6,6 +6,13 @@
             parent::__construct();
             $this->load->model('m_user');
         }
+
+        function index(){
+            $this->load->view('templates/header-loginpage');
+            $this->load->view('pages/loginpage');
+            $this->load->view('templates/footer');
+        }
+
         //fungsi cek login lanjutan dari model m_user
         function ceklogin(){
             $npm = $this->input->post('npm');
@@ -16,10 +23,13 @@
                 //mengambil password dari npm yang dicari
                 foreach($cek->result() as $a){
                     $stored_pass = $a->password;
+                    $nama = $a->nama;
                 }
                 //bcrypt merupakan hash yang mengubah plaintext kedalam bentuk encrypted yang pannjangnya tetap (menggunakan library tambahan dari https://github.com/dwightwatson/codeigniter-bcrypt.git)
                 //mencocokan password yang diinput dengan password yang tersimpan di db dalam bentuk hash
                 if($this->bcrypt->check_password($pswd,$stored_pass)){
+                    $ses_data = array('npm'=>$npm, 'nama'=>$nama, 'masuk'=> 1);
+                    $this->session->set_userdata($ses_data);
                     redirect('bk');
                 }else{
                     $this->load->view('pages/errorpage.php');
@@ -27,6 +37,11 @@
             }else{
                 $this->load->view('pages/errorpage.php');
             }
+        }
+
+        function logout(){
+            $this->session->sess_destroy();
+            redirect(site_url());
         }
     }
 ?>
