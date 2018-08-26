@@ -1,16 +1,14 @@
 <?php
     class Pages extends CI_Controller{
-        public function view($page = 'loginpage'){
-            if(!file_exists(APPPATH.'views/pages/'.$page.'.php')){
-                show_404();
+
+        public function kkm(){
+            if($this->session->userdata('masuk')==1){ //cek apakah sesion masuk bernilai 1
+                $this->load->view('templates/header');
+			    $this->load->view('kkm/index');
+                $this->load->view('templates/footer');
+            }else{
+                redirect(site_url());
             }
-
-            $data['title'] = ucfirst($page);
-
-            // $this->load->view('templates/header');
-            $this->load->view('templates/header-loginpage');
-            $this->load->view('pages/'.$page, $data);
-            $this->load->view('templates/footer');
         }
     }
 ?>
