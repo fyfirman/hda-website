@@ -13,7 +13,7 @@
 <body>
 	<!-- Start of navbar -->
 <header>
-	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" >
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" >
 		<div class="container">
 			<a class="navbar-brand" href="#">Himatif Database</a>
 
