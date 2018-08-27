@@ -42,7 +42,10 @@
   display: table-cell;
   vertical-align: middle;   
 }
-/*.dropdown-hover > .dropdown-toggle:active {
-    Without this, clicking will make it sticky
-    pointer-events: none;
-}*/
+.anggota-photo{
+  object-fit: none;
+  object-position: center;
+  width: 100%;
+  max-height: 200px;
+  margin-bottom: 1rem;
+}

@@ -1,16 +1,27 @@
-<!-- Ini untuk layout BK -->
-<br>
-<br>
-<br>
-<br>
-<h1><?= $title ?></h1>
-
-<div class="container">
-    <!-- Isi webpage tergantung site_url() di file /views/bk/index.php -->
-    <!-- line 12, line 15, line 18-->
-    <?php foreach ($bk->result() as $item) : ?>
-        <?php echo $item->npm ?> 
-        <?php echo $item->nama ?>    
-        <br>
-    <?php endforeach ?>
-</div>
+<main role="main">
+	<div class="card-post my-5">
+		<div class="container p-5 bg-light border">
+			<div class="row">
+				<div class="col-12">
+					<h1><?= $title ?></h1>
+					<div class="row">
+						<?php foreach ($bk->result() as $item) : ?>
+						<div class="col-lg-3 mb-2">
+							<div class="card card-shadow d-flex">
+								<div class="card-header">
+									<img src="http://hda.himatif.org/assets/foto/20<?php echo substr($item->npm,6,2) ?>/<?php echo substr($item->npm,10,2) ?>.jpg" alt="" class="mw-100 mh-100">
+								</div>
+								<div class="card-body text-center">
+									<?php echo $item->jabatan ?>
+									<br>
+									<?php echo $item->nama ?>
+								</div>
+							</div>
+						</div>
+						<?php endforeach ?>
+					</div>
+				</div>
+			</div>		
+		</div>
+	</div>
+</main>
