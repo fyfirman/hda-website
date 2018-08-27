@@ -2,8 +2,9 @@
     class M_user extends CI_Model{
         //fungsi ini mengembalikan nilai row dari username yang dicari
         function cek($npm){
-            $this->db->where("username", $npm);
-            return $this->db->get('user');
+            //select*from anggotas where npm = $npm
+            $this->db->where("npm", $npm);      
+            return $this->db->get('anggotas');   
         }
     }
 ?>

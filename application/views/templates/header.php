@@ -52,12 +52,12 @@
 			<ul class="navbar-nav  ml-auto">	
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-						Username Here
+						<?php echo $this->session->userdata('nama'); ?>
 					</a>
 					<div class="dropdown-menu dropdown-menu-right">
 						<a class="dropdown-item" href="#">Edit Profile</a>
 						<div class="dropdown-divider"></div> 
-						<a class="dropdown-item" href="<?php echo site_url();?>">Logout</a>
+						<a class="dropdown-item" href="<?php echo site_url('/login/logout');?>">Logout</a>
 					</div>
 				</li>
 			</ul>
