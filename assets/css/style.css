@@ -1,9 +1,9 @@
 .dropdown-hover:hover>.dropdown-menu{
   display: block;
 }
-.dropdown-hover>.dropdown-toggle:active {
+/*.dropdown-hover>.dropdown-toggle:active {
     pointer-events: none;
-}
+}*/
 .dropdown-toggle::after {
     display:none;
 }

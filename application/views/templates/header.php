@@ -20,18 +20,19 @@
 			<!-- Navbar -->
 			<ul class="navbar-nav">
 				<!-- Menu Anggota-->
-				<li class="nav-item dropdown dropdown-hover no-arrow">
-					<a class="nav-link dropdown-toggle" href="hello-bootsrap.html" id="navbardrop" data-toggle="dropdown">
-						Anggota
-					</a>
+				<li class="nav-link dropdown dropdown-hover no-arrow">
+					<span class="dropdown-toggle">
+						<a href="<?php echo site_url('/anggota'); ?>">Anggota</a>
+					</span>
+
 					<div class="dropdown-menu">
-						<a class="dropdown-item" href="<?php echo site_url('/anggota'); ?>">2012 - Circle</a>
-						<a class="dropdown-item" href="#">2013 - Pascal</a>
-						<a class="dropdown-item" href="#">2014 - Assembly</a>
-						<a class="dropdown-item" href="#">2015 - Binary</a>
-						<a class="dropdown-item" href="#">2016 - Cyber</a>
-						<a class="dropdown-item" href="#">2017 - Delphi</a>
-						<a class="dropdown-item" href="#">2018 - Eclipse</a>
+						<a class="dropdown-item" href="<?php echo site_url('/anggota/2012'); ?>">2012 - Circle</a>
+						<a class="dropdown-item" href="<?php echo site_url('/anggota/2013'); ?>">2013 - Pascal</a>
+						<a class="dropdown-item" href="<?php echo site_url('/anggota/2014'); ?>">2014 - Assembly</a>
+						<a class="dropdown-item" href="<?php echo site_url('/anggota/2015'); ?>">2015 - Binary</a>
+						<a class="dropdown-item" href="<?php echo site_url('/anggota/2016'); ?>">2016 - Cyber</a>
+						<a class="dropdown-item" href="<?php echo site_url('/anggota/2017'); ?>">2017 - Delphi</a>
+						<a class="dropdown-item" href="<?php echo site_url('/anggota/2018'); ?>">2018 - Eclipse</a>
 					</div>
 				</li>
 
