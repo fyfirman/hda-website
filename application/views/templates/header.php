@@ -25,7 +25,7 @@
 						Anggota
 					</a>
 					<div class="dropdown-menu">
-						<a class="dropdown-item" href="#">2012 - Circle</a>
+						<a class="dropdown-item" href="<?php echo site_url('/anggota'); ?>">2012 - Circle</a>
 						<a class="dropdown-item" href="#">2013 - Pascal</a>
 						<a class="dropdown-item" href="#">2014 - Assembly</a>
 						<a class="dropdown-item" href="#">2015 - Binary</a>
