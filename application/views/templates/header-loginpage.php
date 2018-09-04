@@ -15,7 +15,7 @@
 <header>
 	<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" >
 		<div class="container">
-			<a class="navbar-brand" href="#">Himatif Database</a>
+			<a class="navbar-brand" href="<?php echo site_url()?>">Himatif Database</a>
 		</div>
 	</nav>
 </header>
