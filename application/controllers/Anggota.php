@@ -24,5 +24,11 @@
         	#Under Contruction
         	$this->load->view("anggota/angkatan");
         } 
+        
+        public function view_detail_member($tahun_angkatan,$npm){
+            $this->load->view('templates/header');
+        	$this->load->view('anggota/detail-anggota');
+            $this->load->view('templates/footer');
+        } 
 	}
 ?>
