@@ -64,9 +64,29 @@
   transform: translate(-50%, -50%);
   width: auto;
   font-family: sans-serif;
-  letter-spacing: 5px;
 }
 
+.selection-angkatan{
+  top: 50%;
+  left: 50%;
+  height: var(--background-inner-text);
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 5px;  
+}
+
+.selection-anggota{
+  top: 80%;
+  left: 40%;
+  height: var(--background-inner-text);
+  color: white;
+  letter-spacing: 2px;
+}
+
+.background-text{
+  background: black;
+  color: white;
+}
 /*--------------------------------------------------------------------------------                                        
                             Credit PAGE
 =================================================================================*/
@@ -99,25 +119,4 @@ h4.team-member-designation {
     letter-spacing: 1px;
     font-style: italic;
     margin-top: 5px;
-}
-
-
-
-
-.selection-angkatan{
-  top: 50%;
-  left: 50%;
-  background: black;
-  color: white;
-  height: var(--background-inner-text);
-  text-transform: uppercase;
-}
-
-.selection-anggota{
-  top: 50%;
-  left: 50%;
-  height: var(--background-inner-text)*2;
-  background: black;
-  color: white;
-  text-transform: uppercase; 
 }

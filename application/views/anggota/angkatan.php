@@ -12,9 +12,8 @@
 									<img src="http://hda.himatif.org/assets/foto/2017/51.jpg" alt="" class="mw-100 mh-100">
 								</div>
 								<div class="text-overlay selection-anggota">
-									140810170051
-									<br>
-									Firmansyah Yanuar
+									<a class="background-text">140810170051</a>
+									<a class="background-text">Firmansyah Yanuar</a>
 								</div>
 							</a>
 						</div>
