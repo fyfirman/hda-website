@@ -1,3 +1,6 @@
+:root{
+  --background-inner-text: 25px;
+}
 .dropdown-hover:hover>.dropdown-menu{
   display: block;
 }
@@ -54,20 +57,14 @@
 }
 
 /*--------------------------------------------------------------------------------                                        
-                            Anggota Page
+                            anggota Page
 =================================================================================*/
-.tulis{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: auto;
-    height: 25px;
-    background: black;
-    color: white;
-    text-transform: uppercase;
-    font-family: sans-serif;
-    letter-spacing: 5px;
+.text-overlay{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: auto;
+  font-family: sans-serif;
+  letter-spacing: 5px;
 }
 
 /*--------------------------------------------------------------------------------                                        
@@ -105,3 +102,22 @@ h4.team-member-designation {
 }
 
 
+
+
+.selection-angkatan{
+  top: 50%;
+  left: 50%;
+  background: black;
+  color: white;
+  height: var(--background-inner-text);
+  text-transform: uppercase;
+}
+
+.selection-anggota{
+  top: 50%;
+  left: 50%;
+  height: var(--background-inner-text)*2;
+  background: black;
+  color: white;
+  text-transform: uppercase; 
+}
