@@ -7,7 +7,7 @@
 					<div class="row">
 						<?php for ($i = 0; $i < 65; $i++) : ?>
 						<div class="col-lg-3 mb-2">
-							<div class="d-flex">
+							<a href="#" class="d-flex">
 								<div class="img-responsive mw-100">
 									<img src="http://hda.himatif.org/assets/foto/2017/51.jpg" alt="" class="mw-100 mh-100">
 								</div>
@@ -16,7 +16,7 @@
 									<br>
 									Firmansyah Yanuar
 								</div>
-							</div>
+							</a>
 						</div>
 						<?php endfor ?>
 					</div>
