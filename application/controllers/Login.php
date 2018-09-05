@@ -8,9 +8,13 @@
         }
 
         function index(){
-            $this->load->view('templates/header-loginpage');
-            $this->load->view('pages/loginpage');
-            $this->load->view('templates/footer');
+            if($this->session->userdata('masuk')==1){ //cek session kalau udh pernah login langsung redirect ke bk
+                redirect('bk');
+            }else{
+                $this->load->view('templates/header-loginpage');
+                $this->load->view('pages/loginpage');
+                $this->load->view('templates/footer');
+            }
         }
 
         //fungsi cek login lanjutan dari model m_user

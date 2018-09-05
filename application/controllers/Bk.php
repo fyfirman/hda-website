@@ -6,12 +6,15 @@
             $this->load->model('bk_model');
         }
         // fungsi ini untuk handle /hda-website/bk
-        public function index(){         
-            $data['title'] = 'Badan Kelengkapan Himatif FMIPA Unpad';
-            
-            $this->load->view('templates/header');
-            $this->load->view('bk/index', $data);
-            $this->load->view('templates/footer');
+        public function index(){
+            if($this->session->userdata('masuk')==1){ //cek session login
+                $data['title'] = 'Badan Kelengkapan Himatif FMIPA Unpad';
+                $this->load->view('templates/header');
+                $this->load->view('bk/index', $data);
+                $this->load->view('templates/footer');
+            }else{
+                redirect(site_url());
+            }         
         }
 
         // fungsi ini untuk handle /hda-website/bk/<be atau dpa atau mubes>
