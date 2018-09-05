@@ -5,7 +5,7 @@
 					&copy; Tim HDA Delphi, 2018. Himatif FMIPA Unpad
 				</span>
 				<span class="float-right">
-					<a href="#">Credit</a>
+					<a href="<?php echo site_url('credit'); ?>">Credit</a>
 				</span>
 		</div>
 	</footer>
