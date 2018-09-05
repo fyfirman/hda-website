@@ -5,11 +5,11 @@
 				<div class="col-12">
 					<div class="row">
 						<?php for ($i = 0; $i < 8; $i++) : ?>
-						<div class="col-lg-6 mb-5">														
-							<div class="thumbnail img-relative" >
+						<div class="col-lg-6 mb-5">	
+							<div class="thumbnail text-center">
 								<img class="mh-100 mw-100" src="<?php echo site_url('images/fotang.jpg'); ?>" alt="" >
 								<div class="tulis px-1 ">
-									<p>Mantap</p>
+									<p>DELPHI</p>
 								</div>
 							</div>
 						</div>
