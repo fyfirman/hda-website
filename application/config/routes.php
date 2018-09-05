@@ -5,6 +5,7 @@ $route['login/ceklogin'] = 'login/ceklogin';
 $route['anggota'] = 'anggota/view/';
 $route['anggota/(:any)'] = 'anggota/view/$1';
 $route['bk/(:any)'] = 'bk/view/$1';
+$route['anggota/(:any)/(:any)'] = 'anggota/view_detail_member/$1/$2';
 $route['bk'] = 'bk/index';
 $route['kkm'] = 'pages/kkm';
 $route['credit'] = 'credit/view';
