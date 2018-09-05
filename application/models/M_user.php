@@ -6,5 +6,11 @@
             $this->db->where("npm", $npm);      
             return $this->db->get('anggotas');   
         }
+
+        public function get_db($what = NULL){
+            return $this->db->select('*')
+                            ->from($what)
+                            ->get();
+        }
     }
 ?>

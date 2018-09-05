@@ -3,22 +3,21 @@
 		<div class="container p-5 bg-light border">
 			<div class="row">
 				<div class="col-12">
-					<h1> Delphi </h1>
+					<h1> <?= $title ?> </h1>
 					<div class="row">
-						<?php $j=1; for ($i = 0; $i < 65; $i++) : ?>
-						
-						<div class="col-lg-3 mb-2">
-							<a href="<?php $url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; echo $url."/".$j;?>" class="d-flex">
-								<div class="img-responsive mw-100">
-									<img src="<?php if($j<10){echo 'http://hda.himatif.org/assets/foto/2017/0'.$j.'.jpg';}else{echo 'http://hda.himatif.org/assets/foto/2017/'.$j.'.jpg';}?> " alt="" class="mw-100 mh-100">
-								</div>
-								<div class="text-overlay selection-anggota">
-									<a class="background-text">140810170051</a>
-									<a class="background-text">Firmansyah Yanuar</a>
-								</div>
-							</a>
-						</div>
-						<?php $j++; endfor; ?>
+						<?php foreach ($db->result() as $item) : ?>
+							<div class="col-lg-3 mb-2">
+								<a href="<?php echo site_url('anggota/20').substr($item->npm,6,2)."/".substr($item->npm,10,2)?>">
+									<div class="img-responsive mw-100">
+										<img src="<?=$item->url_foto?>" alt="" class="mw-100 mh-100">
+									</div>
+									<div class="text-overlay selection-anggota">
+										<a class="background-text"><?php echo $item->npm ?></a>
+										<a class="background-text"><?php echo $item->nama ?></a>
+									</div>
+								</a>
+							</div>
+						<?php endforeach; ?>
 					</div>
 				</div>
 			</div>
