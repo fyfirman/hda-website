@@ -2,7 +2,7 @@
 	<div class="card-post my-5">
 		<div class="container p-5 bg-light border">
 			<div class="row">
-				<div class="col-12">
+				<div class="col-12">                
 					<h1>Teknologi</h1>
 					<div class="row">
 						<div class="col-lg-4">

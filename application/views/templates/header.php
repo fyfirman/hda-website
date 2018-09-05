@@ -6,9 +6,13 @@
 	
 	<link href="<?php echo base_url()?>/assets/css/bootstrap.min.css" rel="stylesheet">
 	<link href="<?php echo base_url()?>/assets/css/style.css" rel="stylesheet">
+	<link href="<?php echo base_url()?>/assets/css/owl-carousel/owl.carousel.min.css" rel="stylesheet">
+	<link href="<?php echo base_url()?>/assets/css/owl-carousel/owl.theme.default.min.css" rel="stylesheet">
 
 	<script src="<?php echo base_url()?>/assets/js/jquery-3.3.1.min.js"></script>  
     <script src="<?php echo base_url()?>/assets/js/bootstrap.min.js"></script> 
+    <script src="<?php echo base_url()?>/assets/js/Costum.js" type="text/javascript" ></script> 
+    <script src="<?php echo base_url()?>/assets/js/owl-carousel/owl.carousel.min.js"></script> 
 </head>
 <body>
 	<!-- Start of navbar -->
@@ -63,7 +67,6 @@
 				</li>
 			</ul>
 			</div>
-		</div>
 	</nav>
 </header>
 
