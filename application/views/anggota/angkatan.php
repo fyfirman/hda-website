@@ -5,7 +5,7 @@
 				<div class="col-12">
 					<h1> Delphi </h1>
 					<div class="row">
-						<?php for ($i = 0; $i < 65; $i++) : ?>
+						<!-- <?php for ($i = 0; $i < 65; $i++) : ?>
 						<div class="col-lg-3 mb-2">
 							<div class="card card-shadow d-flex">
 								<div class="card-header">
@@ -18,7 +18,7 @@
 								</div>
 							</div>
 						</div>
-						<?php endfor ?>
+						<?php endfor ?> -->
 					</div>
 				</div>
 			</div>
