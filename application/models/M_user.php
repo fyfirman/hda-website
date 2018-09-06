@@ -1,16 +1,9 @@
 <?php
     class M_user extends CI_Model{
-        //fungsi ini mengembalikan nilai row dari username yang dicari
-        function cek($npm){
-            //select*from anggotas where npm = $npm
-            $this->db->where("npm", $npm);      
-            return $this->db->get('anggotas');   
-        }
-
-        public function get_db($what = NULL){
-            return $this->db->select('*')
-                            ->from($what)
-                            ->get();
+        // Fungsi query db dengan kondisi
+        public function get_db_from($table_name = NULL, $column_name, $condition){
+            $this->db->where($column_name, $condition);
+            return $this->db->get($table_name);
         }
     }
 ?>
