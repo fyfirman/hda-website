@@ -23,7 +23,7 @@
 
         private function view_angkatan($tahun_angkatan){
             // ambil db
-            $data['db'] = $this->m_user->get_db('anggotas');
+            $data['db'] = $this->m_user->get_db_from('anggotas','angkatan', $tahun_angkatan);
             if(empty($data['db'])){
                 show_404();
             }
