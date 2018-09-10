@@ -34,7 +34,13 @@
             // Pass $data ke view untuk dipanggil
             $this->load->view("anggota/angkatan", $data);
         } 
-
+        
+        public function view_detail_member($tahun_angkatan,$npm){
+            $this->load->view('templates/header');
+        	$this->load->view('anggota/detail-anggota');
+            $this->load->view('templates/footer');
+        }
+        
         private function get_title($tahun_angkatan, &$data){
             switch ($tahun_angkatan){
                 case '2012':
