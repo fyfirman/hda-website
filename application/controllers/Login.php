@@ -21,7 +21,7 @@
         function ceklogin(){
             $npm = $this->input->post('npm');
             $pswd = $this->input->post('password');
-            $cek = $this->m_user->cek($npm);
+            $cek = $this->m_user->get_db_from('anggotas','npm',$npm);
             //checking npm
             if($cek->num_rows()>0){
                 //mengambil password dari npm yang dicari
