@@ -3,47 +3,19 @@
         //konstraktor load model bk_model
         public function __construct(){
             parent::__construct();
-            $this->load->model('bk_model');
+            $this->load->model('Bk_model');
         }
-        // fungsi ini untuk handle /hda-website/bk
+
         public function index(){
-            if($this->session->userdata('masuk')==1){ //cek session login
-                $data['title'] = 'Badan Kelengkapan Himatif FMIPA Unpad';
-                $this->load->view('templates/header');
-                $this->load->view('bk/index', $data);
-                $this->load->view('templates/footer');
-            }else{
-                redirect(site_url());
-            }         
-        }
-
-        // fungsi ini untuk handle /hda-website/bk/<be atau dpa atau mubes>
-        public function view($bk = NULL){
-            // header atau title page tergantung site_url() dari /views/bk/index.php
-            switch ($bk){
-                case 'be':
-                    $data['title'] = 'Badan Eksekutif';
-                    break;
-                case 'dpa':
-                    $data['title'] = 'Dewan Perwakilan Anggota';
-                    break;
-                case 'mubes':
-                    $data['title'] = 'Musyawarah Besar';
-                    break;
-                default:
-                    $data['title'] = NULL;
-                    break;
-            }
-
-            // var 'bk' diisi dengan database sesuai dengan site_url() dari /views/bk/index.php
-            $data['bk'] = $this->bk_model->get_bk($bk);
-
-            if(empty($data['bk'])){
-                show_404();
-            }
-
+            $data['tahun'] = '2012';
+            $data['kabinet'] = $this->Bk_model->get_Kabinet();
+            
             $this->load->view('templates/header');
-            $this->load->view('bk/view', $data);
+            for($data['tahun']; $data['tahun'] <= 2017; $data['tahun']++){
+                $data['Bk'] = $this->Bk_model->get_Bk($data['tahun']);
+                $this->load->view('bk/view', $data);
+            }
+            
             $this->load->view('templates/footer');
         }
     }
